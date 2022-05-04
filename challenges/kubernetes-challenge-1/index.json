@@ -1,0 +1,42 @@
+{
+  "type": "challenge@0.8",
+  "title": "Challenge Example - Kubernetes",
+  "description": "",
+  "difficulty": "Advance",
+  "time": "60 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Output env",
+        "text": "1_task.md",
+        "verify": "1_verify.sh",
+        "hint": "1_hint.sh"
+      },
+      {
+        "title": "Extract app.js",
+        "text": "2_task.md",
+        "verify": "2_verify.sh"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "foreground.sh",
+      "courseData": "configure.sh"
+    },
+    "assets": {
+      "host01": [
+          {"file": "cheat", "target": "/usr/local/bin/", "chmod": "+x"},
+          {"file": "cheat2", "target": "/usr/local/bin/", "chmod": "+x"},
+          {"file": "deploy.yaml", "target": "/opt/"}
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "showide": true,
+    "hidesidebar": true
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running:1.18"
+  }
+}

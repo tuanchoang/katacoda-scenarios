@@ -1,0 +1,27 @@
+{
+    "noindex": true,
+    "title": "Dashboard and Terminal Tabs (iframe)",
+    "description": "Add Additional Tabs to the UI with iframe integration",
+    "details": {
+        "steps": [
+            {
+                "title": "Tab Types",
+                "text": "step1.md"
+            }
+        ]
+    },
+    "environment": {
+        "showide": true,
+        "hideintro": true,
+        "showdashboard": true,
+        "dashboards": [
+            {"name": "URL", "href": "https://www.katacoda.com"},
+            {"name": "Port 80", "port": 80},
+            {"name": "Placeholder", "href": "https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/somepage", "port": 8080}],
+        "uilayout": "terminal-iframe"
+    },
+    "backend": {
+      "imageid": "ubuntu",
+      "port": 80
+    }
+}

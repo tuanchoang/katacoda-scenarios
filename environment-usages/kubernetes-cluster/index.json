@@ -1,0 +1,26 @@
+{
+  "title": "Kubernetes",
+  "description": "Multi node Kubernetes cluster configured using Kubeadm",
+  "details": {
+    "steps": [
+      {
+        "title": "Control Plane Node",
+        "text": "step1.md"
+      },
+      {
+        "title": "Worker Node",
+        "text": "step2.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "uilayout": "terminal-terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster:1.18"
+  }
+}
