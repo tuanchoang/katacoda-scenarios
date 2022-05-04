@@ -55,6 +55,6 @@
   },
   "environment": {},
   "backend": {
-    "imageid": "python"
+    "imageid": "ubuntu:2004"
   }
 }
